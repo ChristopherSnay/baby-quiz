@@ -127,7 +127,7 @@ export const animals = [
   },
   {
     id: 25,
-    name: ',Turtle',
+    name: 'Turtle',
     icon: <img src={imageUrl('turtle.png')} className="w-100" />
   },
   {

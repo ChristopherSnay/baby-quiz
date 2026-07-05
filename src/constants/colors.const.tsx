@@ -8,7 +8,9 @@ import {
   red,
   yellow
 } from '@mui/material/colors';
-export const colors = [
+import type { GridItem } from '../models/GridItem';
+
+export const colors: GridItem[] = [
   {
     id: 1,
     name: 'Red',

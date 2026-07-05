@@ -1,10 +1,12 @@
+import type { GridItem } from '../models/GridItem';
+
 const isDev = import.meta.env.MODE === 'development';
 
 const imageUrl = (imageName: string) => {
   return isDev ? `/${imageName}` : `/baby-quiz/${imageName}`;
 };
 
-export const vehicles = [
+export const vehicles: GridItem[] = [
   {
     id: 1,
     name: 'Fire Truck',

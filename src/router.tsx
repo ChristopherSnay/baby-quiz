@@ -2,6 +2,8 @@ import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
 import OptionsGrid from './components/OptionsGrid';
 
+const isDev = import.meta.env.MODE === 'development';
+
 export const router = createBrowserRouter(
   [
     {
@@ -13,5 +15,5 @@ export const router = createBrowserRouter(
       ]
     }
   ],
-  { basename: '/' }
+  { basename: isDev ? '/' : '/baby-quiz/' }
 );

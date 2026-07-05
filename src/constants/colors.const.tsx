@@ -15,7 +15,7 @@ export const colors: GridItem[] = [
     id: 1,
     name: 'Red',
     icon: (
-      <div className="w-100" style={{ backgroundColor: red[700], height: '100px' }}></div>
+      <div className="ratio ratio-1x1 w-100" style={{ backgroundColor: red[700] }}></div>
     )
   },
   {
@@ -23,8 +23,8 @@ export const colors: GridItem[] = [
     name: 'Orange',
     icon: (
       <div
-        className="w-100"
-        style={{ backgroundColor: orange[700], height: '100px' }}
+        className="ratio ratio-1x1 w-100"
+        style={{ backgroundColor: orange[700] }}
       ></div>
     )
   },
@@ -33,8 +33,8 @@ export const colors: GridItem[] = [
     name: 'Yellow',
     icon: (
       <div
-        className="w-100"
-        style={{ backgroundColor: yellow[600], height: '100px' }}
+        className="ratio ratio-1x1 w-100"
+        style={{ backgroundColor: yellow[600] }}
       ></div>
     )
   },
@@ -43,8 +43,8 @@ export const colors: GridItem[] = [
     name: 'Green',
     icon: (
       <div
-        className="w-100"
-        style={{ backgroundColor: green[700], height: '100px' }}
+        className="ratio ratio-1x1 w-100"
+        style={{ backgroundColor: green[700] }}
       ></div>
     )
   },
@@ -52,10 +52,7 @@ export const colors: GridItem[] = [
     id: 5,
     name: 'Blue',
     icon: (
-      <div
-        className="w-100"
-        style={{ backgroundColor: blue[900], height: '100px' }}
-      ></div>
+      <div className="ratio ratio-1x1 w-100" style={{ backgroundColor: blue[900] }}></div>
     )
   },
   {
@@ -63,8 +60,8 @@ export const colors: GridItem[] = [
     name: 'Purple',
     icon: (
       <div
-        className="w-100"
-        style={{ backgroundColor: purple[800], height: '100px' }}
+        className="ratio ratio-1x1 w-100"
+        style={{ backgroundColor: purple[800] }}
       ></div>
     )
   },
@@ -72,10 +69,7 @@ export const colors: GridItem[] = [
     id: 7,
     name: 'Pink',
     icon: (
-      <div
-        className="w-100"
-        style={{ backgroundColor: pink[200], height: '100px' }}
-      ></div>
+      <div className="ratio ratio-1x1 w-100" style={{ backgroundColor: pink[200] }}></div>
     )
   },
   {
@@ -83,8 +77,8 @@ export const colors: GridItem[] = [
     name: 'Brown',
     icon: (
       <div
-        className="w-100"
-        style={{ backgroundColor: brown[500], height: '100px' }}
+        className="ratio ratio-1x1 w-100"
+        style={{ backgroundColor: brown[500] }}
       ></div>
     )
   },
@@ -92,7 +86,7 @@ export const colors: GridItem[] = [
     id: 9,
     name: 'Black',
     icon: (
-      <div className="w-100" style={{ backgroundColor: 'black', height: '100px' }}></div>
+      <div className="ratio ratio-1x1 w-100" style={{ backgroundColor: 'black' }}></div>
     )
   }
 ];

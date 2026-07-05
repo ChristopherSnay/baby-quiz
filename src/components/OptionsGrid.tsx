@@ -14,7 +14,7 @@ export default function OptionsGrid() {
   };
 
   return (
-    <div className="row g-3">
+    <div className="row g-1">
       {items.map((item) => (
         <div key={item.id} className="col-4">
           <Card elevation={0}>

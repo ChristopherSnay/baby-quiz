@@ -25,7 +25,9 @@ export default function AppMenu() {
 
   return (
     <>
-      <Button onClick={handleMenuOpenClick}>Mode</Button>
+      <Button variant="contained" size="large" onClick={handleMenuOpenClick}>
+        Mode
+      </Button>
       <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
         <MenuItem onClick={(e) => handleMenuItemClick(e)}>Vehicles</MenuItem>
         <MenuItem onClick={(e) => handleMenuItemClick(e)}>Colors</MenuItem>

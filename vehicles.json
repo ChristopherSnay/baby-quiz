@@ -23,7 +23,7 @@
   { "id": 22, "name": "Train", "image": "train.png" },
   { "id": 23, "name": "Van", "image": "van.png" },
   { "id": 24, "name": "Tractor", "image": "tractor.png" },
-  { "id": 25, "name": "Steam Roller", "image": "steam-roller.png" },
+  { "id": 25, "name": "Road Roller", "image": "road-roller.png" },
   { "id": 26, "name": "Cruise Ship", "image": "cruise-ship.png" },
   { "id": 27, "name": "Pickup Truck", "image": "pickup-truck.png" },
   { "id": 28, "name": "Space Shuttle", "image": "space-shuttle.png" },

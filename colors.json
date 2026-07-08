@@ -1,0 +1,11 @@
+[
+  { "id": 1, "name": "Red", "colorHex": "#d32f2f", "colorCode": "red[700]" },
+  { "id": 2, "name": "Orange", "colorHex": "#f57c00", "colorCode": "orange[700]" },
+  { "id": 3, "name": "Yellow", "colorHex": "#fbc02d", "colorCode": "yellow[600]" },
+  { "id": 4, "name": "Green", "colorHex": "#388e3c", "colorCode": "green[700]" },
+  { "id": 5, "name": "Blue", "colorHex": "#0d47a1", "colorCode": "blue[900]" },
+  { "id": 6, "name": "Purple", "colorHex": "#512da8", "colorCode": "purple[800]" },
+  { "id": 7, "name": "Pink", "colorHex": "#f8bbd0", "colorCode": "pink[200]" },
+  { "id": 8, "name": "Brown", "colorHex": "#6d4c41", "colorCode": "brown[500]" },
+  { "id": 9, "name": "Black", "colorHex": "#000000", "colorCode": "black" }
+]

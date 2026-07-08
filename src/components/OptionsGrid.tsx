@@ -2,6 +2,7 @@ import { Card, CardActionArea, CardContent } from '@mui/material';
 import { useSearchParams } from 'react-router-dom';
 import useGridItems from '../hooks/gridItems';
 import useTextToSpeech from '../hooks/textToSpeech';
+import { renderGridItemIcon } from '../utils/renderGridItem';
 
 export default function OptionsGrid() {
   const searchParams = useSearchParams();
@@ -19,7 +20,7 @@ export default function OptionsGrid() {
         <div key={item.id} className="col-4">
           <Card elevation={0}>
             <CardActionArea onClick={() => handleItemClick(item.name)}>
-              <CardContent>{item.icon}</CardContent>
+              <CardContent>{renderGridItemIcon(item.image, mode)}</CardContent>
             </CardActionArea>
           </Card>
         </div>

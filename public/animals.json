@@ -44,7 +44,7 @@
   { "id": 43, "name": "Deer", "image": "deer.png" },
   { "id": 44, "name": "Moose", "image": "moose.png" },
   { "id": 45, "name": "Mouse", "image": "mouse.png" },
-  { "id": 46, "name": "Rhino", "image": "rhino.png" },
+  { "id": 46, "name": "Rhinoceros", "image": "rhinoceros.png" },
   { "id": 47, "name": "Hippo", "image": "hippo.png" },
   { "id": 48, "name": "Shark", "image": "shark.png" }
 ]

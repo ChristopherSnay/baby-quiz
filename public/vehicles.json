@@ -28,5 +28,15 @@
   { "id": 27, "name": "Pickup Truck", "image": "pickup-truck.png" },
   { "id": 28, "name": "Space Shuttle", "image": "space-shuttle.png" },
   { "id": 29, "name": "Crane", "image": "crane.png" },
-  { "id": 30, "name": "Hot Air Balloon", "image": "hot-air-balloon.png" }
+  { "id": 30, "name": "Hot Air Balloon", "image": "hot-air-balloon.png" },
+  { "id": 31, "name": "Armored Truck", "image": "armored-truck.png" },
+  { "id": 32, "name": "Food Truck", "image": "food-truck.png" },
+  { "id": 33, "name": "Forklift", "image": "forklift.png" },
+  { "id": 34, "name": "Military Truck", "image": "military-truck.png" },
+  { "id": 35, "name": "Monster Truck", "image": "monster-truck.png" },
+  { "id": 36, "name": "Moped", "image": "moped.png" },
+  { "id": 37, "name": "Oil Truck", "image": "oil-truck.png" },
+  { "id": 38, "name": "Stair Truck", "image": "stair-truck.png" },
+  { "id": 39, "name": "Trolley", "image": "trolley.png" },
+  { "id": 40, "name": "Vehicle", "image": "vehicle.png" }
 ]

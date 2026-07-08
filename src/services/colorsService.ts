@@ -1,4 +1,5 @@
 import type { GridItem } from '../models/GridItem';
+import { getAssetPath } from '../utils/getAssetPath';
 
 interface ColorData {
   id: number;
@@ -14,7 +15,7 @@ export const fetchColors = async (): Promise<GridItem[]> => {
     return cachedColors;
   }
 
-  const response = await fetch('/colors.json');
+  const response = await fetch(getAssetPath('colors.json'));
   const data: ColorData[] = await response.json();
 
   cachedColors = data.map((color) => ({

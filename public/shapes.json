@@ -1,0 +1,14 @@
+[
+  { "id": 1, "name": "Arrow", "image": "arrow.png" },
+  { "id": 2, "name": "Circle", "image": "circle.png" },
+  { "id": 3, "name": "Cross", "image": "cross.png" },
+  { "id": 4, "name": "Diamond", "image": "diamond.png" },
+  { "id": 5, "name": "Heart", "image": "heart.png" },
+  { "id": 6, "name": "Heptagon", "image": "heptagon.png" },
+  { "id": 7, "name": "Hexagon", "image": "hexagon.png" },
+  { "id": 8, "name": "Oval", "image": "oval.png" },
+  { "id": 9, "name": "Pentagon", "image": "pentagon.png" },
+  { "id": 10, "name": "Rectangle", "image": "rectangle.png" },
+  { "id": 11, "name": "Trapezoid", "image": "trapezoid.png" },
+  { "id": 12, "name": "Triangle", "image": "triangle.png" }
+]

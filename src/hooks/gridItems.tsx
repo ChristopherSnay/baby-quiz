@@ -1,39 +1,13 @@
-import { useEffect, useState } from 'react';
-import type { GridItem } from '../models/GridItem';
+import { useMemo } from 'react';
 import { shuffle } from '../utils/shuffle';
-import { useAnimals } from './useAnimals';
-import { useColors } from './useColors';
-import { useVehicles } from './useVehicles';
+import { useCategories } from './useCategories';
+import { useCategoryItems } from './useCategoryItems';
 
 const useGridItems = (mode: string) => {
-  const [items, setItems] = useState<GridItem[]>([]);
-  const { animals } = useAnimals();
-  const { colors } = useColors();
-  const { vehicles } = useVehicles();
+  const { categories } = useCategories();
+  const { items } = useCategoryItems(mode, categories);
 
-  useEffect(() => {
-    let data: GridItem[] = [];
-
-    switch (mode.toLocaleLowerCase()) {
-      case 'trucks':
-      case 'cars':
-      case 'vehicles':
-        data = vehicles;
-        break;
-      case 'colors':
-        data = colors;
-        break;
-      case 'animals':
-        data = animals;
-        break;
-      default:
-        return;
-    }
-
-    setItems(shuffle(data));
-  }, [mode, animals, colors, vehicles]);
-
-  return items;
+  return useMemo(() => shuffle(items), [items]);
 };
 
 export default useGridItems;

@@ -1,24 +1,18 @@
 import { Box, Button } from '@mui/material';
 import { useSearchParams } from 'react-router-dom';
 import QuizGroup from '../components/QuizGroup';
+import useItemAudio from '../hooks/useItemAudio';
 import { useQuizItems } from '../hooks/quizItems';
-import useTextToSpeech from '../hooks/textToSpeech';
 
 export default function QuizPage() {
   const searchParams = useSearchParams();
   const mode = searchParams[0].get('mode') || '';
   const { items, nextGroup } = useQuizItems(mode);
-  const { speak } = useTextToSpeech();
-
-  const handleItemClick = (itemName: string) => {
-    speak(itemName);
-  };
+  const { playItem } = useItemAudio();
 
   const handleNextGroup = () => {
     nextGroup(4);
   };
-
-  // useEffect removed - nextGroup is now called automatically in useQuizItems
 
   if (items.length === 0) {
     return <p>No items found for mode: {mode}</p>;
@@ -32,11 +26,10 @@ export default function QuizPage() {
       <p>Mode: {mode}</p>
       <QuizGroup
         items={items}
-        mode={mode}
         onItemClick={(itemId) => {
           const item = items.find((i) => i.id === itemId);
           if (item) {
-            handleItemClick(item.name);
+            playItem(item);
           }
         }}
       />

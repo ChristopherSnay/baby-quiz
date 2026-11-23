@@ -3,7 +3,7 @@ import type { GridItem } from '../models/GridItem';
 import { renderGridItemIcon } from '../utils/renderGridItem';
 
 export default function QuizGroup(props: Readonly<QuizGroupProps>) {
-  const { items, mode, onItemClick } = props;
+  const { items, onItemClick } = props;
 
   return (
     <div
@@ -19,7 +19,7 @@ export default function QuizGroup(props: Readonly<QuizGroupProps>) {
                 onClick={() => onItemClick?.(item.id)}
               >
                 <CardContent sx={{ height: '100%', display: 'flex', p: 1 }}>
-                  {renderGridItemIcon(item.image, mode)}
+                  {renderGridItemIcon(item.image)}
                 </CardContent>
               </CardActionArea>
             </Card>
@@ -32,6 +32,5 @@ export default function QuizGroup(props: Readonly<QuizGroupProps>) {
 
 interface QuizGroupProps {
   items: GridItem[];
-  mode: string;
   onItemClick?: (itemId: number) => void;
 }

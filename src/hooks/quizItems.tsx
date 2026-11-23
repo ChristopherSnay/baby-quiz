@@ -1,57 +1,25 @@
-import { useCallback, useEffect, useState } from 'react';
-import type { GridItem } from '../models/GridItem';
+import { useCallback, useMemo, useState } from 'react';
 import { shuffle } from '../utils/shuffle';
-import { useAnimals } from './useAnimals';
-import { useColors } from './useColors';
-import { useVehicles } from './useVehicles';
+import { useCategories } from './useCategories';
+import { useCategoryItems } from './useCategoryItems';
+
+interface Group {
+  count: number;
+  version: number;
+}
 
 export const useQuizItems = (mode: string) => {
-  const [allItems, setAllItems] = useState<GridItem[]>([]);
-  const [items, setItems] = useState<GridItem[]>([]);
-  const { animals } = useAnimals();
-  const { colors } = useColors();
-  const { vehicles } = useVehicles();
+  const [group, setGroup] = useState<Group>({ count: 4, version: 0 });
+  const { categories } = useCategories();
+  const { items: categoryItems } = useCategoryItems(mode, categories);
 
-  // get 4 random at a time from allItems and return them as items
-  const nextGroup = useCallback(
-    (count: number) => {
-      if (allItems.length === 0) {
-        setItems([]);
-        return;
-      }
-      const nextItems = shuffle(allItems).slice(0, count);
-      setItems(nextItems);
-    },
-    [allItems]
-  );
+  const allItems = useMemo(() => shuffle(categoryItems), [categoryItems]);
 
-  useEffect(() => {
-    let data: GridItem[] = [];
+  const nextGroup = useCallback((count: number) => {
+    setGroup((current) => ({ count, version: current.version + 1 }));
+  }, []);
 
-    switch (mode.toLocaleLowerCase()) {
-      case 'trucks':
-      case 'cars':
-      case 'vehicles':
-        data = vehicles;
-        break;
-      case 'colors':
-        data = colors;
-        break;
-      case 'animals':
-        data = animals;
-        break;
-      default:
-        setAllItems([]);
-        return;
-    }
-
-    setAllItems(shuffle(data));
-  }, [mode, animals, colors, vehicles]);
-
-  // Automatically get first 4 items when allItems changes
-  useEffect(() => {
-    nextGroup(4);
-  }, [allItems, nextGroup]);
+  const items = useMemo(() => shuffle(allItems).slice(0, group.count), [allItems, group]);
 
   return { items, nextGroup };
 };

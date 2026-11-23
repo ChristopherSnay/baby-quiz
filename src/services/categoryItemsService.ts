@@ -1,5 +1,5 @@
 import type { GridItem } from '../models/GridItem';
-import { getAssetPath } from '../utils/getAssetPath';
+import { getCategoriesPath } from '../utils/getAssetPath';
 
 interface RawItemData {
   id: number;
@@ -21,7 +21,7 @@ export const fetchCategoryItems = async (categoryName: string): Promise<GridItem
     return cachedItems;
   }
 
-  const response = await fetch(getAssetPath(fileName));
+  const response = await fetch(getCategoriesPath(fileName));
   if (!response.ok) {
     throw new Error(`Failed to fetch ${fileName} (${response.status})`);
   }

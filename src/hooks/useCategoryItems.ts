@@ -4,7 +4,7 @@ import type { GridItem } from '../models/GridItem';
 import { fetchCategoryItems } from '../services/categoryItemsService';
 
 interface LoadedItems {
-  categoryName: string;
+  file: string;
   items: GridItem[];
 }
 
@@ -22,8 +22,8 @@ export const useCategoryItems = (mode: string, categories: Category[]) => {
     [categories, mode]
   );
 
-  const isCurrent = Boolean(category) && loaded?.categoryName === category?.name;
-  const items = category && loaded?.categoryName === category.name ? loaded.items : [];
+  const isCurrent = Boolean(category) && loaded?.file === category?.file;
+  const items = category && loaded?.file === category.file ? loaded.items : [];
   const loading = Boolean(category) && !isCurrent;
 
   useEffect(() => {
@@ -35,14 +35,14 @@ export const useCategoryItems = (mode: string, categories: Category[]) => {
 
     const loadItems = async () => {
       try {
-        const data = await fetchCategoryItems(category.name);
+        const data = await fetchCategoryItems(category.file);
         if (!cancelled) {
-          setLoaded({ categoryName: category.name, items: data });
+          setLoaded({ file: category.file, items: data });
           setError(null);
         }
       } catch (err) {
         if (!cancelled) {
-          setError(err instanceof Error ? err : new Error(`Failed to fetch ${category.name}`));
+          setError(err instanceof Error ? err : new Error(`Failed to fetch ${category.file}`));
         }
       }
     };

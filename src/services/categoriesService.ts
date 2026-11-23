@@ -5,6 +5,7 @@ interface RawCategoryData {
   id: number;
   name: string;
   image: string;
+  file: string;
   aliases?: string[];
   sound?: string | null;
 }
@@ -26,6 +27,7 @@ export const fetchCategories = async (): Promise<Category[]> => {
     id: category.id,
     name: category.name,
     image: category.image,
+    file: category.file,
     aliases: category.aliases,
     sound: category.sound ?? null
   }));

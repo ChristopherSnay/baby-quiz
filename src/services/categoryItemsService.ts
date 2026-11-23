@@ -11,11 +11,7 @@ interface RawItemData {
 
 const cache = new Map<string, GridItem[]>();
 
-const getFileName = (categoryName: string): string =>
-  `${categoryName.toLowerCase().replace(/\s+/g, '-')}.json`;
-
-export const fetchCategoryItems = async (categoryName: string): Promise<GridItem[]> => {
-  const fileName = getFileName(categoryName);
+export const fetchCategoryItems = async (fileName: string): Promise<GridItem[]> => {
   const cachedItems = cache.get(fileName);
   if (cachedItems) {
     return cachedItems;

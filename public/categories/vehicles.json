@@ -166,7 +166,7 @@
   },
   {
     "id": 34,
-    "name": "Military Truck",
+    "name": "Army Truck",
     "image": "military-truck.png"
   },
   {
@@ -258,5 +258,10 @@
     "id": 52,
     "name": "Snowmobile",
     "image": "snowmobile.png"
+  },
+  {
+    "id": 53,
+    "name": "Tank",
+    "image": "tank.png"
   }
 ]

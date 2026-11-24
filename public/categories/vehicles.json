@@ -263,5 +263,10 @@
     "id": 53,
     "name": "Tank",
     "image": "tank.png"
+  },
+  {
+    "id": 54,
+    "name": "Street Sweeper",
+    "image": "street-sweeper.png"
   }
 ]

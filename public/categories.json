@@ -4,9 +4,27 @@
     "name": "Vehicles",
     "image": "vehicle.png",
     "file": "vehicles.json",
-    "aliases": ["cars", "trucks"]
+    "aliases": [
+      "cars",
+      "trucks"
+    ]
   },
-  { "id": 2, "name": "Colors", "image": "#d32f2f", "file": "colors.json" },
-  { "id": 3, "name": "Animals", "image": "elephant.png", "file": "animals.json" },
-  { "id": 4, "name": "Shapes", "image": "circle.png", "file": "shapes.json" }
+  {
+    "id": 2,
+    "name": "Colors",
+    "image": "#d32f2f",
+    "file": "colors.json"
+  },
+  {
+    "id": 3,
+    "name": "Animals",
+    "image": "elephant.png",
+    "file": "animals.json"
+  },
+  {
+    "id": 4,
+    "name": "Shapes",
+    "image": "circle.png",
+    "file": "shapes.json"
+  }
 ]

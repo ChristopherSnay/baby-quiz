@@ -1,42 +1,262 @@
 [
-  { "id": 1, "name": "Fire Truck", "image": "fire-truck.png" },
-  { "id": 2, "name": "Dump Truck", "image": "dump-truck.png" },
-  { "id": 3, "name": "Tow Truck", "image": "tow-truck.png" },
-  { "id": 4, "name": "Garbage Truck", "image": "garbage-truck.png" },
-  { "id": 5, "name": "Cement Mixer", "image": "cement-mixer.png" },
-  { "id": 6, "name": "Ice Cream Truck", "image": "ice-cream-truck.png" },
-  { "id": 7, "name": "Delivery Truck", "image": "delivery-truck.png" },
-  { "id": 8, "name": "Snow Plow", "image": "snow-plow.png" },
-  { "id": 9, "name": "Semi Truck", "image": "semi-truck.png" },
-  { "id": 10, "name": "Ambulance", "image": "ambulance.png" },
-  { "id": 11, "name": "Police Car", "image": "police-car.png" },
-  { "id": 12, "name": "School Bus", "image": "school-bus.png" },
-  { "id": 13, "name": "Bicycle", "image": "bicycle.png" },
-  { "id": 14, "name": "Motorcycle", "image": "motorcycle.png" },
-  { "id": 15, "name": "Scooter", "image": "scooter.png" },
-  { "id": 16, "name": "Bulldozer", "image": "bulldozer.png" },
-  { "id": 17, "name": "Excavator", "image": "excavator.png" },
-  { "id": 18, "name": "Jeep", "image": "jeep.png" },
-  { "id": 19, "name": "Airplane", "image": "airplane.png" },
-  { "id": 20, "name": "Helicopter", "image": "helicopter.png" },
-  { "id": 21, "name": "Sailboat", "image": "sailboat.png" },
-  { "id": 22, "name": "Train", "image": "train.png" },
-  { "id": 23, "name": "Van", "image": "van.png" },
-  { "id": 24, "name": "Tractor", "image": "tractor.png" },
-  { "id": 25, "name": "Road Roller", "image": "road-roller.png" },
-  { "id": 26, "name": "Cruise Ship", "image": "cruise-ship.png" },
-  { "id": 27, "name": "Pickup Truck", "image": "pickup-truck.png" },
-  { "id": 28, "name": "Space Shuttle", "image": "space-shuttle.png" },
-  { "id": 29, "name": "Crane", "image": "crane.png" },
-  { "id": 30, "name": "Hot Air Balloon", "image": "hot-air-balloon.png" },
-  { "id": 31, "name": "Armored Truck", "image": "armored-truck.png" },
-  { "id": 32, "name": "Food Truck", "image": "food-truck.png" },
-  { "id": 33, "name": "Forklift", "image": "forklift.png" },
-  { "id": 34, "name": "Military Truck", "image": "military-truck.png" },
-  { "id": 35, "name": "Monster Truck", "image": "monster-truck.png" },
-  { "id": 36, "name": "Moped", "image": "moped.png" },
-  { "id": 37, "name": "Oil Truck", "image": "oil-truck.png" },
-  { "id": 38, "name": "Stair Truck", "image": "stair-truck.png" },
-  { "id": 39, "name": "Trolley", "image": "trolley.png" },
-  { "id": 40, "name": "Vehicle", "image": "vehicle.png" }
+  {
+    "id": 1,
+    "name": "Fire Truck",
+    "image": "fire-truck.png"
+  },
+  {
+    "id": 2,
+    "name": "Dump Truck",
+    "image": "dump-truck.png"
+  },
+  {
+    "id": 3,
+    "name": "Tow Truck",
+    "image": "tow-truck.png"
+  },
+  {
+    "id": 4,
+    "name": "Garbage Truck",
+    "image": "garbage-truck.png"
+  },
+  {
+    "id": 5,
+    "name": "Cement Mixer",
+    "image": "cement-mixer.png"
+  },
+  {
+    "id": 6,
+    "name": "Ice Cream Truck",
+    "image": "ice-cream-truck.png"
+  },
+  {
+    "id": 7,
+    "name": "Delivery Truck",
+    "image": "delivery-truck.png"
+  },
+  {
+    "id": 8,
+    "name": "Snow Plow",
+    "image": "snow-plow.png"
+  },
+  {
+    "id": 9,
+    "name": "Semi Truck",
+    "image": "semi-truck.png"
+  },
+  {
+    "id": 10,
+    "name": "Ambulance",
+    "image": "ambulance.png"
+  },
+  {
+    "id": 11,
+    "name": "Police Car",
+    "image": "police-car.png"
+  },
+  {
+    "id": 12,
+    "name": "School Bus",
+    "image": "school-bus.png"
+  },
+  {
+    "id": 13,
+    "name": "Bicycle",
+    "image": "bicycle.png"
+  },
+  {
+    "id": 14,
+    "name": "Motorcycle",
+    "image": "motorcycle.png"
+  },
+  {
+    "id": 15,
+    "name": "Scooter",
+    "image": "scooter.png"
+  },
+  {
+    "id": 16,
+    "name": "Bulldozer",
+    "image": "bulldozer.png"
+  },
+  {
+    "id": 17,
+    "name": "Excavator",
+    "image": "excavator.png"
+  },
+  {
+    "id": 18,
+    "name": "Jeep",
+    "image": "jeep.png"
+  },
+  {
+    "id": 19,
+    "name": "Airplane",
+    "image": "airplane.png"
+  },
+  {
+    "id": 20,
+    "name": "Helicopter",
+    "image": "helicopter.png"
+  },
+  {
+    "id": 21,
+    "name": "Sailboat",
+    "image": "sailboat.png"
+  },
+  {
+    "id": 22,
+    "name": "Train",
+    "image": "train.png"
+  },
+  {
+    "id": 23,
+    "name": "Van",
+    "image": "van.png"
+  },
+  {
+    "id": 24,
+    "name": "Tractor",
+    "image": "tractor.png"
+  },
+  {
+    "id": 25,
+    "name": "Road Roller",
+    "image": "road-roller.png"
+  },
+  {
+    "id": 26,
+    "name": "Cruise Ship",
+    "image": "cruise-ship.png"
+  },
+  {
+    "id": 27,
+    "name": "Pickup Truck",
+    "image": "pickup-truck.png"
+  },
+  {
+    "id": 28,
+    "name": "Space Shuttle",
+    "image": "space-shuttle.png"
+  },
+  {
+    "id": 29,
+    "name": "Crane",
+    "image": "crane.png"
+  },
+  {
+    "id": 30,
+    "name": "Hot Air Balloon",
+    "image": "hot-air-balloon.png"
+  },
+  {
+    "id": 31,
+    "name": "Bank Truck",
+    "image": "armored-truck.png"
+  },
+  {
+    "id": 32,
+    "name": "Food Truck",
+    "image": "food-truck.png"
+  },
+  {
+    "id": 33,
+    "name": "Forklift",
+    "image": "forklift.png"
+  },
+  {
+    "id": 34,
+    "name": "Military Truck",
+    "image": "military-truck.png"
+  },
+  {
+    "id": 35,
+    "name": "Monster Truck",
+    "image": "monster-truck.png"
+  },
+  {
+    "id": 36,
+    "name": "Moped",
+    "image": "moped.png"
+  },
+  {
+    "id": 37,
+    "name": "Oil Truck",
+    "image": "oil-truck.png"
+  },
+  {
+    "id": 38,
+    "name": "Stair Truck",
+    "image": "stair-truck.png"
+  },
+  {
+    "id": 39,
+    "name": "Trolley",
+    "image": "trolley.png"
+  },
+  {
+    "id": 40,
+    "name": "Race Car",
+    "image": "race-car.png"
+  },
+  {
+    "id": 41,
+    "name": "Submarine",
+    "image": "submarine.png"
+  },
+  {
+    "id": 42,
+    "name": "Blimp",
+    "image": "zeppelin.png"
+  },
+  {
+    "id": 43,
+    "name": "Double Decker Bus",
+    "image": "double-decker-bus.png"
+  },
+  {
+    "id": 44,
+    "name": "Taxi",
+    "image": "taxi.png"
+  },
+  {
+    "id": 45,
+    "name": "Canoe",
+    "image": "canoe.png"
+  },
+  {
+    "id": 46,
+    "name": "Carriage",
+    "image": "carriage.png"
+  },
+  {
+    "id": 47,
+    "name": "Hot Dog Truck",
+    "image": "hot-dog-truck.png"
+  },
+  {
+    "id": 48,
+    "name": "Jet Ski",
+    "image": "jet-ski.png"
+  },
+  {
+    "id": 49,
+    "name": "Pirate Ship",
+    "image": "pirate-ship.png"
+  },
+  {
+    "id": 50,
+    "name": "Skateboard",
+    "image": "skateboard.png"
+  },
+  {
+    "id": 51,
+    "name": "Sled",
+    "image": "sled.png"
+  },
+  {
+    "id": 52,
+    "name": "Snowmobile",
+    "image": "snowmobile.png"
+  }
 ]

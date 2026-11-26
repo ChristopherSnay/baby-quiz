@@ -268,5 +268,70 @@
     "id": 54,
     "name": "Street Sweeper",
     "image": "street-sweeper.png"
+  },
+  {
+    "id": 55,
+    "name": "Snowcat",
+    "image": "snowcat.png"
+  },
+  {
+    "id": 56,
+    "name": "Cultivator",
+    "image": "cultivator.png"
+  },
+  {
+    "id": 57,
+    "name": "Boom Lift",
+    "image": "boom-lift.png"
+  },
+  {
+    "id": 58,
+    "name": "Seeder",
+    "image": "seeder.png"
+  },
+  {
+    "id": 59,
+    "name": "Trencher",
+    "image": "trencher.png"
+  },
+  {
+    "id": 60,
+    "name": "Skid Steer",
+    "image": "skid-steer.png"
+  },
+  {
+    "id": 61,
+    "name": "Scraper",
+    "image": "scraper.png"
+  },
+  {
+    "id": 62,
+    "name": "Lawn Mower",
+    "image": "lawn-mower.png"
+  },
+  {
+    "id": 63,
+    "name": "Harvester",
+    "image": "harvester.png"
+  },
+  {
+    "id": 64,
+    "name": "Backhoe",
+    "image": "backhoe.png"
+  },
+  {
+    "id": 65,
+    "name": "Sprayer",
+    "image": "sprayer.png"
+  },
+  {
+    "id": 66,
+    "name": "Car Carrier",
+    "image": "car-carrier.png"
+  },
+  {
+    "id": 67,
+    "name": "Wrecking Ball",
+    "image": "wrecking-ball.png"
   }
 ]

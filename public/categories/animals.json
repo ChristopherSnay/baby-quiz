@@ -238,5 +238,85 @@
     "id": 48,
     "name": "Shark",
     "image": "shark.png"
+  },
+  {
+    "id": 49,
+    "name": "Reindeer",
+    "image": "reindeer.png"
+  },
+  {
+    "id": 50,
+    "name": "Beaver",
+    "image": "beaver.png"
+  },
+  {
+    "id": 51,
+    "name": "Cat",
+    "image": "cat.png"
+  },
+  {
+    "id": 52,
+    "name": "Eagle",
+    "image": "eagle.png"
+  },
+  {
+    "id": 53,
+    "name": "Goat",
+    "image": "goat.png"
+  },
+  {
+    "id": 54,
+    "name": "Gorilla",
+    "image": "gorilla.png"
+  },
+  {
+    "id": 55,
+    "name": "Grasshopper",
+    "image": "grasshopper.png"
+  },
+  {
+    "id": 56,
+    "name": "Jellyfish",
+    "image": "jellyfish.png"
+  },
+  {
+    "id": 57,
+    "name": "Ladybug",
+    "image": "ladybug.png"
+  },
+  {
+    "id": 58,
+    "name": "Seahorse",
+    "image": "seahorse.png"
+  },
+  {
+    "id": 59,
+    "name": "Seal",
+    "image": "seal.png"
+  },
+  {
+    "id": 60,
+    "name": "Skunk",
+    "image": "skunk.png"
+  },
+  {
+    "id": 61,
+    "name": "Snail",
+    "image": "snail.png"
+  },
+  {
+    "id": 62,
+    "name": "Squid",
+    "image": "squid.png"
+  },
+  {
+    "id": 63,
+    "name": "Starfish",
+    "image": "starfish.png"
+  },
+  {
+    "id": 64,
+    "name": "Turkey",
+    "image": "turkey.png"
   }
 ]
